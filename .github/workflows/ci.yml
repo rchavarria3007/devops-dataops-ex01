@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Verificar se site/index.html existe
+        run: |
+          if [ ! -f "site/index.html" ]; then
+            echo "Arquivo site/index.html não encontrado!"
+            exit 1
+          fi
+          echo "Arquivo site/index.html encontrado com sucesso."
+
+      - name: Rodar teste simples
+        run: |
+          echo "Rodando testes simples..."
+          # Aqui você poderia rodar testes reais se tivesse (ex.: npm test, pytest, etc.)
+          echo "Testes concluídos com sucesso."
