@@ -9,8 +9,7 @@ O objetivo é mostrar, de forma prática, como fluxos automatizados ajudam a man
 # Estrutura do Projeto
 
 A estrutura de pastas é a seguinte:
-seu-projeto/
-│
+.
 ├── site/
 │   └── index.html        # Página estática publicada no GitHub Pages
 │
