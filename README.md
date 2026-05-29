@@ -9,7 +9,7 @@ O objetivo é mostrar, de forma prática, como fluxos automatizados ajudam a man
 # Estrutura do Projeto
 
 A estrutura de pastas é a seguinte:
-.
+```.
 ├── site/
 │   └── index.html        # Página estática publicada no GitHub Pages
 │
@@ -17,6 +17,7 @@ A estrutura de pastas é a seguinte:
 └── workflows/
 ├── ci.yml        # Pipeline de Integração Contínua (CI)
 └── cd.yml        # Pipeline de Deploy Contínuo (CD)
+```
 
 ## Descrição dos Arquivos
 
